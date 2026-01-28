@@ -5,13 +5,18 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MY PRECIOUS RAM 🧠",
-  description: "Site meme sobre os preços absurdos de RAM na era da IA",
-  keywords: ["RAM", "meme", "AI", "Gollum", "precious", "memory prices"],
+  title: "MY PRECIOUS RAM 🧠 | RAM Prices Go BRRR",
+  description: "They're taking the RAM to Isengard! Watch RAM prices go insane in real-time. A meme site about the absurd RAM prices in the AI era.",
+  keywords: ["RAM", "meme", "AI", "Gollum", "precious", "memory prices", "DDR5", "NVIDIA", "stonks"],
   openGraph: {
-    title: "MY PRECIOUS RAM",
-    description: "They're taking the RAM to Isengard!",
-    images: ["/images/gollum-ram.png"],
+    title: "MY PRECIOUS RAM 🧠",
+    description: "They're taking the RAM to Isengard! Watch the chaos unfold.",
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MY PRECIOUS RAM 🧠",
+    description: "RAM prices go BRRRRR 📈📈📈",
   },
 };
 
@@ -21,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <body className={`${inter.className} scanlines`}>{children}</body>
     </html>
   );
